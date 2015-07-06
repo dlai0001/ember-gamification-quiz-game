@@ -14,12 +14,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     {{content-for 'head-footer'}}
+
+    <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
+    <script>
+        var errorSoundID = "Error";
+        var successSoundId = "Success";
+
+        function loadSound () {
+            createjs.Sound.registerSound("error.wav", errorSoundID);
+            createjs.Sound.registerSound("success.wav", successSoundId);
+        }
+
+        function playError () {
+            createjs.Sound.play(errorSoundID);
+        }
+
+        function playSuccess () {
+            createjs.Sound.play(successSoundId);
+        }
+
+    </script>
 </head>
-<body>
+<body onload="loadSound();">
 {{content-for 'body'}}
 
 <script src="assets/vendor.js"></script>
 <script src="assets/gamify.js"></script>
+<script src="https://code.createjs.com/soundjs-0.6.1.min.js"></script>
 
 {{content-for 'body-footer'}}
 </body>
