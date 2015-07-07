@@ -13,5 +13,5 @@ export default Ember.ArrayController.extend({
             sortAscending: false,
             content: this.get('model')
         });
-    }.property('model'),
+    }.property('model')
 });

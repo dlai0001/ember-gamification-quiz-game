@@ -63,7 +63,6 @@ Ember.Controller.extend({
     },
 
     calculatePercentMastery: function () {
-        debugger;
         var count = 0;
         var questionsInQuestionBank = this.get('questionBank');
         for (var i=0; i<questionsInQuestionBank.length; i++) {

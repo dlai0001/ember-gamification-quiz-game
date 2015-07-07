@@ -1,1 +1,9 @@
-{{outlet}}
+<h1>Class Goals</h1>
+Class Mastery: {{classMastery}}
+
+<h3>Leaderboard</h3>
+<ol>
+    {{#each}}
+        <li>{{name}} {{percentMastery}}%</li>
+    {{/each}}
+</ol>
