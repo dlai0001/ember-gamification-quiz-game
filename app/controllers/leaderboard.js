@@ -4,6 +4,6 @@ export default Ember.ArrayController.extend({
     init: function() {
         this._super();
         //debugger;
-        this.set('model', [1, 2, 3]);
+        this.set('model', this.store.find('player'));
     }
 });

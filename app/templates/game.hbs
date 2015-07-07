@@ -5,7 +5,7 @@
             {{player.team}}
         </div>
         <div class="col-md-10">
-            Questions Correct: {{player.right}}{{player.answered}}
+            Questions Correct: {{player.right}}/{{player.answered}}
         </div>
     </div>
 
@@ -21,9 +21,6 @@
     </div>
 
     <div {{bind-attr class="isAnswered:answered"}}>
-        <p>
-            Question?
-        </p>
         <p>
             {{currentQuestion.question}}
         </p>

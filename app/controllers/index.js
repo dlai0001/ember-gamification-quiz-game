@@ -31,8 +31,8 @@ export default Ember.Controller.extend({
             });
             player.save();
 
-            this.transitionToRoute('game').then(function(newRoute) {
-                newRoute.controller.set('player', player);
+            this.transitionTo('game').then(function(newRoute) {
+                newRoute.controllerFor('game').set('player', player);
             });
         }
     }

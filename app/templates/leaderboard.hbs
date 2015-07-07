@@ -1,4 +1,6 @@
 Placeholder leaderboard
-{{#each model as |player|}}
-    {{player}}
-{{/each}}
+<ol>
+    {{#each model as |player|}}
+        <li>{{player.name}} {{player.right}}</li>
+    {{/each}}
+</ol>

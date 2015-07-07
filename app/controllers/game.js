@@ -13,9 +13,14 @@ export default Ember.Controller.extend({
         answerQuestion: function(answer) {
             console.log("answer question", answer);
 
-            this.checkQuestion(answer);
+            var result = this.checkQuestion(answer);
 
             this.set("isAnswered", true);
+
+            this.get("player").incrementProperty('answered');
+            if(result) {
+                this.get("player").incrementProperty('right');
+            }
 
             Ember.run.later((function() {
                 this.nextQuestion();
