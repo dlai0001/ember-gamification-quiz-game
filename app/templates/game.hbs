@@ -2,38 +2,32 @@
     <div class="row">
         <div class="col-md-2">
             {{player.name}}<br/>
-            {{player.team}}
+            {{player.team}}<br/>
+            Questions Correct: {{player.right}}/{{player.answered}}<br/>
+            <div>
+                {{render "leaderboard"}}
+            </div>
         </div>
-        <div class="col-md-10">
-            Questions Correct: {{player.right}}/{{player.answered}}
-        </div>
-    </div>
-
-
-    <div class=" row">
-        <div class="col-md-2">
-            {{render "leaderboard"}}
-        </div>
-
         <div class="col-md-10">
             {{render "achievements"}}
+            <br/><br/>
+            <div {{bind-attr class="isAnswered:answered"}}>
+                <p>
+                    {{currentQuestion.question}}
+                </p>
+                <p>
+                <ul>
+                    <li {{action "answerQuestion" "a"}}>A: {{currentQuestion.a}}</li>
+                    <li {{action "answerQuestion" "b"}}>B. {{currentQuestion.b}}</li>
+                    <li {{action "answerQuestion" "c" on="click"}}>C. {{currentQuestion.d}}</li>
+                    <li {{action "answerQuestion" "d" on="click"}}>D. {{currentQuestion.d}}</li>
+                </ul>
+                </p>
+
+            </div>
         </div>
     </div>
 
-    <div {{bind-attr class="isAnswered:answered"}}>
-        <p>
-            {{currentQuestion.question}}
-        </p>
-        <p>
-            <ul>
-                <li {{action "answerQuestion" "a"}}>A: {{currentQuestion.a}}</li>
-                <li {{action "answerQuestion" "b"}}>B. {{currentQuestion.b}}</li>
-                <li {{action "answerQuestion" "c" on="click"}}>C. {{currentQuestion.d}}</li>
-                <li {{action "answerQuestion" "d" on="click"}}>D. {{currentQuestion.d}}</li>
-            </ul>
-        </p>
-
-    </div>
 
     {{#if isAnswered}}
         <div class="backdrop-skim">

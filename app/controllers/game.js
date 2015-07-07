@@ -17,10 +17,12 @@ export default Ember.Controller.extend({
 
             this.set("isAnswered", true);
 
-            this.get("player").incrementProperty('answered');
+            var player = this.get("player");
+            player.incrementProperty('answered');
             if(result) {
-                this.get("player").incrementProperty('right');
+                player.incrementProperty('right');
             }
+            player.save();
 
             Ember.run.later((function() {
                 this.nextQuestion();
