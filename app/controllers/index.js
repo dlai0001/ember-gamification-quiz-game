@@ -27,7 +27,8 @@ export default Ember.Controller.extend({
                 name: this.get('name'),
                 team: this.get('team'),
                 right: 0,
-                answered: 0
+                answered: 0,
+                percentMastery: 0
             });
             player.save();
 

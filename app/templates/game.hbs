@@ -1,22 +1,26 @@
 <div>
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
             {{player.name}}<br/>
             {{player.team}}<br/>
-            Questions Correct: {{player.right}}/{{player.answered}}<br/>
+            Questions correct:<br/>
+            {{player.right}}/ 10 needed for prize<br/>
+            Mastery: {{player.percentMastery}}%<br/>
+
             <div>
                 {{render "leaderboard"}}
             </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
             {{render "achievements"}}
             <br/><br/>
+
             <div {{bind-attr class="isAnswered:answered"}}>
+
+                <h1>{{currentQuestion.question}}</h1>
+
                 <p>
-                    {{currentQuestion.question}}
-                </p>
-                <p>
-                <ul>
+                <ul class="choices">
                     <li {{action "answerQuestion" "a"}}>A: {{currentQuestion.a}}</li>
                     <li {{action "answerQuestion" "b"}}>B. {{currentQuestion.b}}</li>
                     <li {{action "answerQuestion" "c" on="click"}}>C. {{currentQuestion.d}}</li>

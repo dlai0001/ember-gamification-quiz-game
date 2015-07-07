@@ -19,3 +19,36 @@ div.backdrop-skim div.alert {
 div.answered {
     opacity: 0.5;
 }
+
+ul.choices {
+    list-style: none;
+}
+
+ul.choices li {
+    line-height: 2rem;
+    padding: .5em;
+    border: 1px solid;
+    border-color: navy;
+    background-color: deepskyblue;
+    width: 80%;
+    border-radius: 0.5em;
+}
+
+
+div.leaderboard {
+    padding: .5em;
+    border-radius: 0.5em;
+    border: 1px solid;
+    border-color: navy;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+div.you {
+    padding: .5em;
+    border-radius: 0.5em;
+    border: 1px solid;
+    border-color: navy;
+    background-color: cornflowerblue;
+    color: white;
+}

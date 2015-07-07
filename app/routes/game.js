@@ -20,7 +20,8 @@ var questions = [
         a:"answer 1",
         b:"answer 2",
         c:"answer 3",
-        d:"answer 4"
+        d:"answer 4",
+        mastered: false
     },
     {
         question: "22 How many pecks does it take to pick a pickle pepper (answer is A)",
@@ -28,7 +29,8 @@ var questions = [
         a:"answer 1",
         b:"answer 2",
         c:"answer 3",
-        d:"answer 4"
+        d:"answer 4",
+        mastered: false
     },
     {
         question: "33 How many pecks does it take to pick a pickle pepper (answer is A)",
@@ -36,7 +38,8 @@ var questions = [
         a:"answer 1",
         b:"answer 2",
         c:"answer 3",
-        d:"answer 4"
+        d:"answer 4",
+        mastered: false
     },
     {
         question: "44 How many pecks does it take to pick a pickle pepper (answer is A)",
@@ -44,7 +47,8 @@ var questions = [
         a:"answer 1",
         b:"answer 2",
         c:"answer 3",
-        d:"answer 4"
+        d:"answer 4",
+        mastered: false
     },
 
 ];
