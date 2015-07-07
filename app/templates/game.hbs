@@ -5,7 +5,12 @@
             {{player.team}}<br/>
             Questions correct:<br/>
             {{player.right}}/ 10 needed for prize<br/>
-            Mastery: {{player.percentMastery}}%<br/>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                     aria-valuemin="0" aria-valuemax="100" style="width:{{player.masteryAsPercent}}%">
+                    Mastery {{player.masteryAsPercent}}%
+                </div>
+            </div>
 
             <div>
                 {{render "leaderboard"}}

@@ -12,5 +12,9 @@ export default Ember.ArrayController.extend({
             totalMastery += player.get("percentMastery");
         });
         return totalMastery / players.get("length");
-    }.property('@each.percentMastery')
+    }.property('@each.percentMastery'),
+
+    classMasteryPercent: function() {
+        return (this.get('classMastery')*100).toString() + "%";
+    }.property('classMastery')
 });
