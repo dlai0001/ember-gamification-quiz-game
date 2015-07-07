@@ -1,6 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+    name: null,
+    team: null,
+
     actions: {
         error: function() {
 //            var newPost = this.store.createRecord('post', {
@@ -15,6 +18,16 @@ export default Ember.Controller.extend({
 
         success: function() {
             playSuccess();
+        },
+
+        join: function() {
+            console.log("submitting", this.get('name'), this.get('team'));
+
+            var player = this.store.createRecord('player', {
+                name: this.get('name'),
+                team: this.get('team')
+            });
+            player.save();
         }
     }
 });

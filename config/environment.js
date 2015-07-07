@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'gamify',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
-    firebase: 'https://bsci652gamify.firebaseio.com/',
+    firebase: 'https://bsci651gamify.firebaseIO.com',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
