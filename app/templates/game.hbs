@@ -1,37 +1,51 @@
-{{outlet}}
-
-{{player.name}}<br/>
-{{player.team}}<br/>
-
-<div class=" row">
-    <div class="col-md-2">
-        {{render "leaderboard"}}
-    </div>
-
-    <div class="col-md-10">
-        Acheivements
-        <ul>
-            <li>badge 1</li>
-            <li>badge 2</li>
-            <li>badge 3</li>
-        </ul>
-        {{outlet "acheivements"}}
-    </div>
-</div>
-
 <div>
-    <p>
-        Question?
-    </p>
-    <p>
-        What is the Motivation composed of?
-    </p>
-    <p>
-        <ul>
-            <li>A. Candy</li>
-            <li>C. Bacon</li>
-            <li>C. Turkey</li>
-        </ul>
-    </p>
+    <div class="row">
+        <div class="col-md-2">
+            {{player.name}}<br/>
+            {{player.team}}
+        </div>
+        <div class="col-md-10">
+            Questions Correct: {{player.right}}{{player.answered}}
+        </div>
+    </div>
+
+
+    <div class=" row">
+        <div class="col-md-2">
+            {{render "leaderboard"}}
+        </div>
+
+        <div class="col-md-10">
+            {{render "achievements"}}
+        </div>
+    </div>
+
+    <div {{bind-attr class="isAnswered:answered"}}>
+        <p>
+            Question?
+        </p>
+        <p>
+            {{currentQuestion.question}}
+        </p>
+        <p>
+            <ul>
+                <li {{action "answerQuestion" "a"}}>A: {{currentQuestion.a}}</li>
+                <li {{action "answerQuestion" "b"}}>B. {{currentQuestion.b}}</li>
+                <li {{action "answerQuestion" "c" on="click"}}>C. {{currentQuestion.d}}</li>
+                <li {{action "answerQuestion" "d" on="click"}}>D. {{currentQuestion.d}}</li>
+            </ul>
+        </p>
+
+    </div>
+
+    {{#if isAnswered}}
+        <div class="backdrop-skim">
+            {{#if isWrong}}
+                <div class="alert alert-danger" role="alert">Incorrect!</div>
+            {{else}}
+                <div class="alert alert-success" role="alert">Correct!</div>
+            {{/if}}
+        </div>
+    {{/if}}
 
 </div>

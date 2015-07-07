@@ -25,7 +25,9 @@ export default Ember.Controller.extend({
 
             var player = this.store.createRecord('player', {
                 name: this.get('name'),
-                team: this.get('team')
+                team: this.get('team'),
+                right: 0,
+                answered: 0
             });
             player.save();
 
