@@ -1,5 +1,8 @@
 import Ember from 'ember';
 
+var playSuccess = window.playSuccess;
+var playError = window.playError;
+
 export default
 Ember.Controller.extend({
     currentQuestionCount: 0,
@@ -29,14 +32,14 @@ Ember.Controller.extend({
     nextQuestion: function () {
         var currentCount = this.incrementProperty('currentQuestionCount');
         var questions = this.get("questionBank");
-        this.set("currentQuestion", questions[currentCount % questions.length])
+        this.set("currentQuestion", questions[currentCount % questions.length]);
 
         this.set("isAnswered", false);
         this.set("isWrong", false);
     },
 
     checkQuestion: function (answer) {
-        var result = answer == this.get('currentQuestion').answer;
+        var result = answer === this.get('currentQuestion').answer;
         this.set("isWrong", !result);
 
         if (result) {
@@ -65,7 +68,7 @@ Ember.Controller.extend({
     calculatePercentMastery: function () {
         var count = 0;
         var questionsInQuestionBank = this.get('questionBank');
-        for (var i=0; i<questionsInQuestionBank.length; i++) {
+        for (var i = 0; i < questionsInQuestionBank.length; i++) {
             if (questionsInQuestionBank[i].mastered) {
                 count++;
             }
