@@ -28,6 +28,10 @@ export default Ember.Controller.extend({
                 team: this.get('team')
             });
             player.save();
+
+            this.transitionToRoute('game').then(function(newRoute) {
+                newRoute.controller.set('player', player);
+            });
         }
     }
 });
