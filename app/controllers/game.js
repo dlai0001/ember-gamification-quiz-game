@@ -35,6 +35,13 @@ export default Ember.Controller.extend({
     checkQuestion: function(answer) {
         var result = answer == this.get('currentQuestion').answer;
         this.set("isWrong", !result);
+
+        if(result) {
+            playSuccess();
+        } else {
+            playError();
+        }
+
         return result;
     },
 

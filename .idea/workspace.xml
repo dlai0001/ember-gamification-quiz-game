@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6d3bf6c-ec1d-4dda-87df-2d9a306d916b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/components/.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/app.css" afterPath="$PROJECT_DIR$/app/styles/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/game.hbs" afterPath="$PROJECT_DIR$/app/templates/game.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes/game.js" afterPath="$PROJECT_DIR$/app/routes/game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/index.js" afterPath="$PROJECT_DIR$/app/controllers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/game.js" afterPath="$PROJECT_DIR$/app/controllers/game.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gamify.iws" />
@@ -103,8 +99,18 @@
       <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49723756" vertical-offset="360" max-vertical-offset="780">
-              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.7044199" vertical-offset="360" max-vertical-offset="885">
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.625" vertical-offset="222" max-vertical-offset="795">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -510,14 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.0" vertical-offset="222" max-vertical-offset="795">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="315">
@@ -616,10 +614,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.625" vertical-offset="222" max-vertical-offset="795">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49723756" vertical-offset="360" max-vertical-offset="780">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.7044199" vertical-offset="360" max-vertical-offset="885">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
           <folding />
         </state>
       </provider>
