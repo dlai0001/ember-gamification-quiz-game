@@ -15,6 +15,6 @@ export default Ember.ArrayController.extend({
     }.property('@each.percentMastery'),
 
     classMasteryPercent: function() {
-        return (this.get('classMastery')*100).toString() + "%";
+        return this.get('classMastery')*100;
     }.property('classMastery')
 });
