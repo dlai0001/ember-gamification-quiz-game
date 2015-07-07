@@ -50,5 +50,59 @@ var questions = [
         d:"24% Improved engagement. 48% turnover.",
         mastered: false
     },
+    {
+        question: "What company has made leadership training addictive?",
+        answer:"c",
+        a:"SAP ",
+        b:"Khan Academy",
+        c:"Deloitte",
+        d:"McDonalds",
+        mastered: false
+    },
+    {
+        question: "100% of employees submit travel expenses after which company gamified their travel expense system?",
+        answer:"a",
+        a:"Google",
+        b:"Ziprecruiter",
+        c:"Verizon",
+        d:"IBM",
+        mastered: false
+    },
+    {
+        question: "This company saw 80% of employees participate in at least one of its gamified wellvolution programs?",
+        answer:"c",
+        a:"Nike",
+        b:"IBM",
+        c:"Blue Shield/Blue Cross",
+        d:"SAP",
+        mastered: false
+    },
+    {
+        question: "What is the term to describe when players start resenting the game due to their bonuses tied to the game system?",
+        answer:"b",
+        a:"Player-game resentment",
+        b:"Gamification backlash",
+        c:"Extrinsic reward overload",
+        d:"Intrinsic-Extrinsic dissonance",
+        mastered: false
+    },
+    {
+        question: "What are the 3 basic needs that are part of Self Determination?",
+        answer:"b",
+        a:"Rewards, Competence, and Relatedness",
+        b:"Competence, Relatedness, and Autonomy",
+        c:"Rewards, Relatedness, and Autonomy",
+        d:"Rewards, Competence, and Autonomy",
+        mastered: false
+    },
+    {
+        question: "Why shouldn't you tie extrinsic rewards as part of your Gamification program?",
+        answer:"a",
+        a:"In the long term, may cause resentment of the game.",
+        b:"It encourages workplace devious behavior",
+        c:"Because virtual points are free, rewards cost money",
+        d:"It increases scrutiny of your company to gambling regulations",
+        mastered: false
+    }
 
 ];

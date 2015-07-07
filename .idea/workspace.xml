@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6d3bf6c-ec1d-4dda-87df-2d9a306d916b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/classboard.hbs" afterPath="$PROJECT_DIR$/app/templates/classboard.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/classboard.js" afterPath="$PROJECT_DIR$/app/controllers/classboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes/game.js" afterPath="$PROJECT_DIR$/app/routes/game.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gamify.iws" />
@@ -67,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classboard.hbs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="classboard.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/classboard.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17751479" vertical-offset="0" max-vertical-offset="338">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="300">
               <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -121,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/routes/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="885">
-              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            <state vertical-scroll-proportion="4.212034" vertical-offset="0" max-vertical-offset="1695">
+              <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -157,7 +156,6 @@
         <option value="$PROJECT_DIR$/app/templates/index.hbs" />
         <option value="$PROJECT_DIR$/app/controllers/leaderboard.js" />
         <option value="$PROJECT_DIR$/app/routes/classboard.js" />
-        <option value="$PROJECT_DIR$/app/routes/game.js" />
         <option value="$PROJECT_DIR$/app/routes/index.js" />
         <option value="$PROJECT_DIR$/app/controllers/index.js" />
         <option value="$PROJECT_DIR$/app/controllers/game.js" />
@@ -165,6 +163,7 @@
         <option value="$PROJECT_DIR$/app/templates/game.hbs" />
         <option value="$PROJECT_DIR$/app/controllers/classboard.js" />
         <option value="$PROJECT_DIR$/app/templates/classboard.hbs" />
+        <option value="$PROJECT_DIR$/app/routes/game.js" />
       </list>
     </option>
   </component>
@@ -605,14 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="885">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
@@ -673,11 +664,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/classboard.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17751479" vertical-offset="0" max-vertical-offset="338">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="300">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.212034" vertical-offset="0" max-vertical-offset="1695">
+          <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
