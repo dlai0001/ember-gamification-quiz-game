@@ -1,0 +1,9 @@
+{
+  "firebase": "bsci651gamify",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

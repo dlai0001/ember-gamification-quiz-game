@@ -13,8 +13,11 @@ Ember.Controller.extend({
     isAnswered: false,
     isWrong: false,
 
+    streak: 0,
+
     actions: {
         answerQuestion: function (answer) {
+
             console.log("answer question", answer);
 
             var result = this.checkQuestion(answer);
@@ -46,6 +49,7 @@ Ember.Controller.extend({
             this.get('currentQuestion').mastered = true;
             playSuccess();
         } else {
+            this.get('currentQuestion').mastered = false;
             playError();
         }
 
@@ -62,7 +66,7 @@ Ember.Controller.extend({
         player.set('percentMastery', percentMastery);
         player.save();
 
-        console.log("TODO: handle adding badges");
+        this.applyBadges(result, player);
     },
 
     calculatePercentMastery: function () {
@@ -74,5 +78,41 @@ Ember.Controller.extend({
             }
         }
         return count / questionsInQuestionBank.length;
+    },
+
+    applyBadges: function(result, player) {
+        console.log("apply badges to ", result);
+
+        // baby steps
+        this.controllerFor("achievements").set("babysteps",true);
+
+        //check accurancy badge
+        if(player.get("answered") >= 5 && player.get("right") === player.get("answered")) {
+            this.controllerFor("achievements").set("oneHunderedPercentAccurate",true);
+        } else {
+            this.controllerFor("achievements").set("oneHunderedPercentAccurate",false);
+        }
+
+        //check streak badges
+        var streak;
+        if(result) {
+            streak = this.incrementProperty("streak");
+        } else {
+            this.set("streak", 0);
+            streak = 0;
+        }
+        if(streak >= 3) {
+            this.controllerFor("achievements").set("threeInARow",true);
+        } else {
+            this.controllerFor("achievements").set("threeInARow",false);
+        }
+
+        //check 50% & 100% badges
+        if(player.get("percentMastery") >= 1) {
+            this.controllerFor("achievements").set("masteredOneHundred",true);
+        } else if (player.get("percentMastery") >= 0.5) {
+            this.controllerFor("achievements").set("masteredFifty",true);
+        }
+
     }
 });

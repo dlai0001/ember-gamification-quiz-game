@@ -1,0 +1,35 @@
+.target-icon, .hundredpercent, .BabyStepsIcon, .s-50-percent, .bowling-turkey-hi{
+	background: url(sprites.png) no-repeat;
+    display:inline-block;
+}
+
+.target-icon{
+	background-position: -110px 0;
+	width: 100px;
+	height: 100px;
+}
+
+.hundredpercent{
+	background-position: 0 0;
+	width: 100px;
+	height: 100px;
+}
+
+.BabyStepsIcon{
+	background-position: -455px -4px ;
+	width: 100px;
+	height: 100px;
+}
+
+.s-50-percent{
+	background-position: -340px -4px ;
+	width: 100px;
+	height: 80px;
+}
+
+.bowling-turkey-hi{
+	background-position: -224px -6px ;
+	width: 100px;
+	height: 70px;
+}
+

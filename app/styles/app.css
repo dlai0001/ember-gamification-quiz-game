@@ -52,3 +52,12 @@ div.you {
     background-color: cornflowerblue;
     color: white;
 }
+
+span.badge.visible {
+    display: inline-block;
+}
+
+.badge {
+    display: none;
+}
+
