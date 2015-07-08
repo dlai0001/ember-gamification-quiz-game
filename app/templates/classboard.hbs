@@ -6,11 +6,14 @@
     </div>
 </div>
 
-<h3>Leaderboard</h3>
-<ol>
-    {{#each}}
-        <li>{{name}} ({{team}}) {{masteryAsPercent}}%</li>
-    {{/each}}
-</ol>
+{{#if model}}
+    <h3>Leaderboard</h3>
+    <ol>
+        {{#each}}
+            <li>{{name}} ({{team}}) {{masteryAsPercent}}%</li>
+        {{/each}}
+    </ol>
+{{/if}}
 
-<h5 class="alert alert-info">Goto http://development.gamify.divshot.io/ to join the game</h5>
+
+<h2 class="alert alert-info">Goto <span class="url">http://production.gamify.divshot.io/</span> to join the game</h2>

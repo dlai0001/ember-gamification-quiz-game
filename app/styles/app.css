@@ -62,3 +62,7 @@ span.badge.visible {
     display: none;
 }
 
+h2 span.url {
+    color: black;
+    font-weight: bold;
+}
