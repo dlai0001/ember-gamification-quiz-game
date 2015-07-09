@@ -14,6 +14,7 @@ export default Ember.Route.extend({
 });
 
 var questions = [
+    //1
     {
         question: "What is (enterprise) Gamification?",
         answer:"b",
@@ -23,6 +24,7 @@ var questions = [
         d:"Using gambling theory to estimate likelihood of an employee finishing on time.",
         mastered: false
     },
+    //2
     {
         question: "What are 3 core elements of Gamification?",
         answer:"c",
@@ -32,6 +34,7 @@ var questions = [
         d:"Points, Leaderboards, and Prizes",
         mastered: false
     },
+    //3
     {
         question: "When was Gamification first coined? By whom?",
         answer:"d",
@@ -41,6 +44,7 @@ var questions = [
         d:"Nick Pelling, a British games programmer and inventory, first mentioned the word 2002.",
         mastered: false
     },
+    //4
     {
         question: "According to survey by the Aberdeen Group, Gamification improved employee engagement by what percent? Turnover percent?",
         answer:"a",
@@ -50,6 +54,7 @@ var questions = [
         d:"36% Improved engagement. 48% turnover.",
         mastered: false
     },
+    //5
     {
         question: "Which company has made leadership training addictive?",
         answer:"c",
@@ -59,6 +64,17 @@ var questions = [
         d:"McDonalds",
         mastered: false
     },
+    //6
+    {
+        question: "Which billionaire playboy is Batman's alter ego?",
+        answer:"d",
+        a:"Bill Gates",
+        b:"Dick Grayson",
+        c:"Michael Keaton",
+        d:"Bruce Wayne",
+        mastered: false
+    },
+    //7
     {
         question: "100% of its employees submit their travel expenses after which company gamified their travel expense system?",
         answer:"a",
@@ -68,6 +84,7 @@ var questions = [
         d:"IBM",
         mastered: false
     },
+    //8
     {
         question: "This company saw 80% of employees participate in at least one of its gamified 'wellvolution' programs?",
         answer:"c",
@@ -77,31 +94,34 @@ var questions = [
         d:"SAP",
         mastered: false
     },
+    //9
     {
-        question: "What is the term used to describe when players start resenting the game due to their external rewards tied to the game system?",
-        answer:"b",
-        a:"Player-game resentment",
-        b:"Gamification backlash",
-        c:"Extrinsic reward overload",
-        d:"Intrinsic-Extrinsic dissonance",
+        question: "From the batcave, how many miles is it to Gotham City?",
+        answer:"c",
+        a:"1",
+        b:"5",
+        c:"14",
+        d:"20",
         mastered: false
     },
+    //10
     {
-        question: "What are the 3 basic needs according to Self Determination Theory (SDT)?",
-        answer:"b",
-        a:"Rewards, Competence, and Relatedness",
-        b:"Competence, Relatedness, and Autonomy",
-        c:"Rewards, Relatedness, and Autonomy",
-        d:"Rewards, Competence, and Autonomy",
-        mastered: false
-    },
-    {
-        question: "Why shouldn't you tie extrinsic rewards as part of your Gamification program?",
+        question: "In the 1960’s Batman TV Series, What famous person’s bust (statue) did Alfred use to open the bookcase and expose the Bat-poles?",
         answer:"a",
-        a:"In the long run, may cause resentment of the game.",
-        b:"It encourages workplace devious behavior",
-        c:"Because virtual points are free, rewards cost money",
-        d:"It increases scrutiny of your company to gambling regulations",
+        a:"Shakespeare",
+        b:"Caesar",
+        c:"George Washington",
+        d:"Abraham Lincoln",
+        mastered: false
+    },
+    //11
+    {
+        question: "By 2018, how large is the Gamification market projected to be?",
+        answer:"c",
+        a:"500 million",
+        b:"1 billion",
+        c:"5 billion",
+        d:"20 billion",
         mastered: false
     }
 

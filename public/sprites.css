@@ -33,3 +33,9 @@
 	height: 70px;
 }
 
+.bat-logo {
+    background: url(batlogo.jpg) no-repeat;
+    display:inline-block;
+    width: 100px;
+    height: 63px;
+}

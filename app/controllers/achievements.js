@@ -5,5 +5,6 @@ export default Ember.Controller.extend({
     threeInARow: false,
     masteredFifty: false,
     masteredOneHundred: false,
-    oneHunderedPercentAccurate: false
+    oneHunderedPercentAccurate: false,
+    batman: false
 });

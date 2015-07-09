@@ -1,5 +1,5 @@
 div.backdrop-skim {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -24,7 +24,7 @@ ul.choices {
     list-style: none;
 }
 
-ul.choices li {
+ul.choices li button {
     line-height: 2rem;
     padding: .5em;
     border: 1px solid;

@@ -59,5 +59,16 @@ export default Ember.View.extend({
                 this.$(".target-icon").removeClass("visible");
             }
         }catch(e) {}
-    }.observes("controller.oneHunderedPercentAccurate")
+    }.observes("controller.oneHunderedPercentAccurate"),
+
+    batman: function() {
+        try {
+            var value = this.get("controller.batman");
+            if (value) {
+                this.$(".bat-logo").addClass("visible");
+            } else {
+                this.$(".bat-logo").removeClass("visible");
+            }
+        }catch(e) {}
+    }.observes("controller.batman")
 });

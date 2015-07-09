@@ -114,5 +114,10 @@ Ember.Controller.extend({
             this.controllerFor("achievements").set("masteredFifty",true);
         }
 
+        // check Batman questions
+        var questionBank = this.get("questionBank");
+        if(questionBank[9].mastered && questionBank[8].mastered && questionBank[5].mastered) {
+            this.controllerFor("achievements").set("batman",true);
+        }
     }
 });
